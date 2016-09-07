@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: sampleservice
+    main:
+        show_banner: false
+server:
+   port: 0
+   undertow:
+    accesslog:
+            enabled: true
+            dir: "/var/tmp/microservices/sampleservice/"
+            pattern: combined
+    compression:
+        enabled: true
+        min-response-size: 1
